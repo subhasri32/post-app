@@ -4,8 +4,6 @@ import Home from "./Home";
 import About from "./About";
 import Posts from "./Posts";
 import post from "./post";
-
-import p from "./p";
 import NotFound from "./NotFound";
 function App(){
   return(
