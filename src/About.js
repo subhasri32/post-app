@@ -18,6 +18,7 @@ function About() {
               Created By:vijayalakshmi
             </p>
             <p>contains details about the user id ,title and body</p>
+            <p>in this App you can post your comments,and view your comments</p>
           </div>
         </div>
       </div>

@@ -5,6 +5,7 @@ import About from "./About";
 import Posts from "./Posts";
 import post from "./post";
 import NotFound from "./NotFound";
+
 function App(){
   return(
     

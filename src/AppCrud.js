@@ -97,9 +97,10 @@ render()
 {
     return (
         <>
-        <p>CRUDApp</p>
+        <div class="form-style-6">
         <form onSubmit={this.handleSubmit}>
             <div>
+                <h1>Add information here</h1>
             <label>user id</label>
             <input
             name="userId"
@@ -134,23 +135,22 @@ render()
 
 <Button  variant="primary" type="submit">submit</Button>
         </form>
+        </div>
+        <div class="details">
         <Table striped bordered>
             <tr>
-                <th>userId</th>
-                <th>Id</th>
                 <th>title</th>
                 <th>body</th>
                 <th>Actions</th>
             </tr>
+            
             {
             this.state.posts.map((post)=>{
                 return(
                 <tr>
-                    
-                    <td>{post.id}</td>
-                    <td>{post.userId}</td>
                     <td>{post.title}</td>
                     <td>{post.body}</td>
+                    <div class="b">
                     <td>
                         <Button variant="primary"  size="sm" active onClick={()=>this.selectposttoupdate(post)}>update</Button>
                         <Button variant="danger"  size="sm" active onClick={()=>this.deletePost(post.id)}>Delete</Button>
@@ -158,10 +158,13 @@ render()
                          <p key={post.id}><Link to={`/posts/${post.id}`}>comments</Link></p>
                         }                       
                     </td>
+                    </div>
                 </tr>
                 );
             })}
+            
         </Table>
+        </div>
       </>
     );
 }
